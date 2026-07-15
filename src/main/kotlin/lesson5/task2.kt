@@ -7,10 +7,10 @@ fun main() {
 
     var age = 20
 
-    println("$surname $name $patronymic, $age")
+    println("[$surname $name $patronymic, $age]")
 
     age = 22
     surname = "Сидорова"
 
-    println("$surname $name $patronymic, $age")
+    println("[$surname $name $patronymic, $age]")
 }
