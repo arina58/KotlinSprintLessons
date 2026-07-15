@@ -3,7 +3,11 @@ package org.example.lesson5
 fun main() {
     val originalNumber = 6
 
+    var resultTable = ""
+
     for (i in 1..9) {
-        println("$originalNumber x $i = ${originalNumber * i}")
+        resultTable += "$originalNumber x $i = ${originalNumber * i}\n"
     }
+
+    println(resultTable)
 }
