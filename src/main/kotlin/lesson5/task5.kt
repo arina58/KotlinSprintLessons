@@ -5,7 +5,7 @@ fun main() {
 
     val (stepFrom, stepTo, stepNumber) = inputString.split("-", ";")
 
-    println(stepNumber)
     println(stepFrom)
     println(stepTo)
+    println(stepNumber)
 }
