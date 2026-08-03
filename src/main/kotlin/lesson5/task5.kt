@@ -5,7 +5,7 @@ fun main() {
 
     val (stepFrom, stepTo, stepNumber) = inputString.split("-", ";")
 
-    println("stepNumber: $stepNumber")
-    println("stepFrom: $stepFrom")
-    println("stepTo: $stepTo")
+    println(stepNumber)
+    println(stepFrom)
+    println(stepTo)
 }
