@@ -18,7 +18,7 @@ fun main() {
     val isFavorableWeather = readln().toBoolean()
 
     val canShipFloat =
-        (!isDamagedShip && countCrew in COUNT_CREW_MIN..COUNT_CREW_MAX && countProvisions > COUNT_PROVISIONS_MIN) ||
+        (!isDamagedShip && countCrew >= COUNT_CREW_MIN && countCrew <= COUNT_CREW_MAX && countProvisions > COUNT_PROVISIONS_MIN) ||
                 (countCrew == COUNT_CREW_MAX && isFavorableWeather && countProvisions >= COUNT_PROVISIONS_MIN)
 
     println("Корабль может отправиться в плаванье: $canShipFloat")
