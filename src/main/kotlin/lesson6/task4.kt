@@ -8,5 +8,16 @@ const val BACK_EXERCISES = 0
 fun main() {
     val currentDay = 5
 
-    println("Упражнения для рук: ${currentDay % 2 == HANDS_EXERCISES}\nУпражнения для ног: ${currentDay % 2 == LEGS_EXERCISES}\nУпражнения для спины: ${currentDay % 2 == BACK_EXERCISES}\nУпражнения для пресса: ${currentDay % 2 == PRESS_EXERCISES}")
+    println("""
+        %-22s %b
+        %-22s %b
+        %-22s %b
+        %-22s %b
+    """.trimIndent().format(
+            "Упражнения для рук:",   currentDay % 2 == HANDS_EXERCISES,
+            "Упражнения для ног:",   currentDay % 2 == LEGS_EXERCISES,
+            "Упражнения для спины:", currentDay % 2 == BACK_EXERCISES,
+            "Упражнения для пресса:",currentDay % 2 == PRESS_EXERCISES
+        )
+    )
 }
